@@ -1,0 +1,360 @@
+
+html{font-size:62.5%;}
+body{font-family: 微软雅黑;color:#767676;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{font-family: 微软雅黑; font-weight:bold;}
+p{margin:0}
+a{text-decoration: none;color:#767676}
+textarea{resize: none}
+img{width:100%;vertical-align: top}
+.point13{font-size:1.3rem}
+.point14{font-size:1.4rem}
+.fl{float:left}
+.fr{float:right}
+.bgcolor{background:#f7f7f7}
+.clearfix:after{content:"";display:block;height:0;clear:both;font-size:0;*zoom:1;}
+
+.slider-pager .slider-pager-page{color: #f1f1f1  }
+.bar .title{display:none}
+.bar .buttons span{color:#fff;font-size: 2rem;}
+.bar .button.back-button, .bar button.back-button{color:#fff;padding-left:1.5rem}
+.has-header{top:4.5rem}
+
+/*Scale-In Animation*/
+.scale-in {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.scale-in.ng-enter,
+.scale-in > .ng-enter {
+    transition: all cubic-bezier(.1, .7, .1, 1) 600ms;
+}
+
+.scale-in.ng-enter-active,
+.scale-in > .ng-enter-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.scale-in.ng-leave,
+.scale-in > .ng-leave {
+    transition: all ease-in-out 250ms;
+}
+/*tabs底部图标*/
+.home_on{
+    background: url(../images/tabs/home_on.png) no-repeat center;
+    background-size: 2.8rem;
+}
+.home_outline{
+    background: url(../images/tabs/home_outline.png) no-repeat center;
+    background-size: 2.8rem;
+}
+.assistant_on{
+    background: url(../images/tabs/assistant_on.png) no-repeat center;
+    background-size:2.8rem;
+}
+.assistant_outline{
+    background: url(../images/tabs/assistant_outline.png) no-repeat center;
+    background-size: 2.8rem;
+}
+.community_on{
+    background: url(../images/tabs/community_on.png) no-repeat center;
+    background-size: 2.8rem;
+}
+.community_outline{
+    background: url(../images/tabs/community_outline.png) no-repeat center;
+    background-size: 2.8rem;
+}
+
+/*home样式*/
+.top{
+    width:100%;
+    height:12.7rem;
+    background:url("../images/home/main_bg.png") no-repeat;
+    background-size: cover
+}
+.top .state{
+    margin:2.5rem 0 0 2rem;
+}
+.top .state .dp{
+    width:5.7rem;
+    height:5.7rem;
+    margin-right:1.7rem
+}
+.top .info{
+    color:#fff;
+}
+.top .info h3{
+    font-size:2rem;
+    color:#fff;
+}
+.top .info h3 span{
+    font-size:1.3rem;
+    padding-left:0.8rem;
+    font-weight: normal;
+}
+.top .info p{
+    font-size:1.3rem;
+    line-height:1.7rem;
+}
+.top .past img{
+    width:2.5rem;
+    height:2.6rem;
+    margin:3.9rem 2.3rem 0 0
+}
+.slideshow{
+    margin:2.1rem 1.66% 0
+}
+.slideshow img{
+    height:13.8rem;
+
+}
+.workbox .title{
+    height:4.5rem;
+}
+.workbox .title .fl{
+    margin:1.6rem 0 0 1.5rem;
+}
+.workbox .title .fl i{
+    vertical-align: middle;
+    display: inline-block;
+    width:1.8rem;
+    height:1.8rem;
+
+
+}
+.workbox .title .fl .mywork{ background: url(../images/home/mywork.png) no-repeat center center;background-size: cover;}
+.workbox .title .fl .star5{ background: url(../images/home/star5.png) no-repeat center center;background-size: cover;}
+.workbox .title .fl span{
+    font-size:1.5rem;
+    color:#000;
+}
+.workbox .title .fr{
+    margin:2rem 1.5rem 0 0
+}
+.workbox .title .fr a{
+    color:#2ac598;
+    font-size: 1rem;
+}
+.workbox ul{
+   margin-left:1%;
+
+}
+.workbox ul li{
+    background: #fff;
+    float:left;
+    margin:0 1% 0.6rem;
+    width:47.5%;
+}
+.workbox ul li .name{
+    padding:1.2rem 0 0 1rem;
+}
+.workbox ul li .class{
+    padding:0 0 1.1rem 1rem;
+}
+
+/*作品盒子*/
+    /*修改heardertop默认样式,顶部样式*/
+.headertop{
+    height:4.5rem;
+    width:100%;
+    background: #19adb9;
+    color:#fff;
+    line-height: 5.5rem;
+    margin:0;
+    padding:0;
+}
+.search{display:block;height:2.2rem;width:2.2rem;margin:0.8rem 0.8rem 0 0}
+.workboxes{ margin-left:1%}
+.workboxes li{width:47.5%;float:left;border-radius: 10px;background: #fff;margin:1.66% 1%}
+.workboxes .nameicon{height:5.8rem;border-bottom: 1px #efefef solid;line-height: 5.8rem}
+.workboxes .nameicon .dpic{width:3.2rem;height:1.9rem;border-radius: 50%;margin-left:1.0rem;padding-top:1.3rem;}
+.workboxes .nameicon span{font-size:1.6rem;color:#303030;padding-left:0.9rem}
+.workboxes li p{height:4.8rem;line-height: 4.8rem;color:#808080;font-size:1.2rem;padding-left:1.0rem;}
+
+/*作品盒子详情尹钦*/
+.backtohome{height: 4.5rem;background: #24a4af;}
+#backbutton {
+    padding-top: 1rem;
+    padding-left: 5%;
+    font-size: 3rem;
+    color: #fff;
+}
+.thumup{
+    width: 7rem;
+    height: 2.1rem;
+    margin-right: 5%;
+    margin-top:1rem;
+}
+ .thumup img{width:2.1rem;height:2.1rem;margin-left:0.8rem;}
+.title{width: 100%;height: 4.8rem;}
+.title p {
+    padding-left: 5%;
+    color: #303030;
+    font-size: 1.6rem;
+    line-height: 4.8rem;
+}
+.icons{width: 40%;padding-right: 10%;line-height: 4.8rem;}
+.eye{width: 15%;position: relative;top:2rem;}
+.thum{width: 15%;position: relative;top:1.7rem;}
+.icons span{position: absolute;left: 130%;top:-1.8rem;width: 2rem;height: 2rem;}
+
+#owner{border: none;width: 100%;min-height: 4rem;}
+#owner img{margin-top: -2%;}
+#owner p{color: #606060;font-size: 1.5rem;line-height: 1.8rem;}
+
+.listmore{width: 100%;}
+
+
+
+/*火星助手*/
+.back{display:block;height:2.2rem;margin:1.3rem 0 0 0.8rem;line-height: 2.2rem;color:#fff;font-size:2rem;}
+.back img{width:1.2rem;height:2rem;margin-right:1rem;}
+.inputcont{background:#f4f5f6;text-align: center;padding:3.6rem 3.5% 0}
+.inputcont textarea{width:100%;height:12.5rem;border-radius: 10px;}
+.inputcont .helpbtn{width:35%;height:3.4rem;background:#9ad7db;border: none;color:#fff;font-size:1.6rem;border-radius:4rem;margin: 2.8rem 0}
+.achelpbtn{width:35%;height:3.4rem;background:#19adb9;border: none;color:#fff;font-size:1.6rem;border-radius:4rem;margin: 2.8rem 0}
+.processed{text-align: center;}
+.processnull{text-align: center;margin-top:9rem;color:#606060;font-size:1.6rem;}
+.processed .title{height:5.6rem;line-height:5.6rem;padding:0}
+.pd{padding:0}
+.processed .title .nowtime{padding-top:1.2rem;}
+.processed .title .nowtime p{line-height:1.2rem;}
+.processed .evaluatebtn{width:6rem;height:2.3rem;background:#19adb9;border: none;border-radius: 2rem;color:#fff;font-size:1.4rem;}
+.promptbox{background: rgba(0, 0, 0, 0.5);width:16rem;height:3.5rem;color:#fff;text-align: center;
+position: absolute;bottom:8%;left:25%;line-height:3.5rem;animation:fadeto 4s;border-radius: 2rem;}
+@keyframes fadeto {
+    0%{opacity:0.5}
+    25%{opacity:1}
+    50%{opacity:1}
+    75%{opacity:1}
+    100%{opacity:0;}
+}
+/*丁杰css*/
+/*set*/
+.bar-color{background:#19adb9; color:#f1f1f1;}
+.set-title{background:#19adb9;}
+.set-title .head-portrait{color:#f1f1f1;}
+.set-title .head-portrait i{padding-right:10px;}
+.bar .button.button-clear, .bar button.button-clear{font-size:2.3rem; margin-left:10px;}
+.set-list .item{padding:0;}
+.set-list .item:first-child{margin:1rem 0.2rem 1.65rem; border:none;}
+.set-list .item:first-child h2{color:#19adb9;}
+.set-list .item:last-child{margin:2rem 0 0 0; border:none;}
+.borderT{border-top:none;}
+.borderB{border-bottom:none;}
+.set-list .item h2{font-size:1.7rem; color:#606060; float:left; line-height:7.1rem; margin-left:1.6rem;}
+.set-list .item .header-portrait{width:4.85rem; height:4.85rem; border-radius:50%; float:right; margin:1.25rem 3.05rem 1.25rem 0;}
+.set-list .item .header-portrait img{width:100%; height:100%;}
+.set-list .item span{float:right; line-height:7.1rem; font-size:1rem; margin-right:2.4rem;}
+.item-toggle .toggle {top:2.8rem;}
+.toggle .track{height:20px;}
+.toggle input:checked+.track{background:#d4f3ea; border:#d4f3ea;}
+.toggle .handle{top:0px; width:30px; height:30px; background:#2ac598;}
+.toggle input:checked+.track .handle{background:#2ac598;}
+.password{text-align:center;}
+.password input{width:91.6%; height:4.85rem; color:#ccc; border-radius:8px; padding-left:4.2%; margin-top:2rem;}
+.password p{float:left; font-size:1.4rem; color:#606060; line-height:3.7rem; padding-left:2rem;}
+.password button{width:91.6%; height:4.2rem; border-radius:2.1rem; background:#19adb9; border:none; font-size:1.7rem; color:#eaf4ff;}
+
+
+/*result*/
+.resultT{height:11.3rem; background:none;}
+.resultT .info h3{color:#505050;}
+.resultT .info h3 span{width:8.1rem; height:1.9rem; background:#19adb9; border-radius:0.95rem; color:#d5f4ec; margin-left:0.8rem; padding:0 0.5rem; font-size:1.2rem;}
+.resultT .info p{color:#707070; font-size:1.4rem; line-height:2.6rem;}
+.resultT .info .efficiency{font-size:1.3rem;}
+.resultT .info .efficiency span{margin-left:2rem;}
+.resultM .result_title{height:2.65rem; background:#f4fcfe;}
+.resultM .result_title .result_pic{margin:0.5rem 1.2rem 0px 1.5rem;}
+.resultM .result_title img{width:2.15rem; height:2rem;}
+.resultM .result_title h4{font-size:1.3rem; color:#707070; line-height:2.65rem; font-weight:400; margin:0;}
+.resultM .box_s{width:91.6%; height:1.8rem; border-radius:0.9rem; margin-left:4.2%; margin-top:1.55rem; margin-bottom:1.95rem; position:relative; background:#efefef;}
+.resultM .box_s .box-in{width:94.8%; height:1.8rem; border-radius:0.9rem; position:absolute; left:0; top:0;
+    background: -webkit-linear-gradient(left, #55d1ad , #a3d9f5); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #55d1ad, #a3d9f5); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #55d1ad, #a3d9f5); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #55d1ad , #a3d9f5); /* 标准的语法（必须放在最后） */}
+input[type=search], input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=color], textarea{display:inline-block;}
+
+/*job_quality*/
+.result_state{width:100%; height:25.45rem; background:#f4f5f6; text-align:center; padding-top:5.2rem;}
+.result_state img{width:15.05rem; height:15.05rem;}
+.result_ul li{text-align:center; font-size:1.7rem; color:#1d3462; line-height:7.35rem;}
+.result_list li{height:6.3rem; line-height:6.3rem; text-align:center; font-size:1.3rem; color:#606060;}
+.result_list li:last-child{border-bottom:none;}
+.result_grade2{position:relative;}
+.result_grade2 .result_back{width:100%; height:4.2rem; background:#2da795; text-align:center; position:absolute; left:0; bottom:0; font-size:5rem; color:#fff;}
+
+/*share*/
+#sharepic .scroll{height:100%}
+.share_bg{background:url(../images/set/share.png) no-repeat left top; width:100%; height:100%; background-size:cover; position:relative; text-align:center;}
+.share_bg .share_name{position:absolute; left:0; top:5rem; width:100%;}
+.share_bg .share_name h2{font-size:2.4rem; color:#1d3462; font-weight:400;}
+.share_bg .share_name p{font-size:1.6rem; color:#1d3462;}
+.share_bg .share_name h6{font-size:1.6rem; color:#606060; font-weight:400; line-height:4rem; position:relative;}
+.share_bg .share_name h6 span{font-size:4rem; color:#57d1ae; position:absolute; left:40%; top:0;}
+.share_bg .share_btn{position:absolute; left:0; bottom:8%; width:100%;}
+.share_bg .share_btn button{width:43.1%; height:4.4rem; margin:0 0.5rem; font-size:1.7rem; color:#fff; border-radius:0.4rem; border:none;}
+.share_bg .share_btn button:first-child{background:#19adb9;}
+.share_bg .share_btn button:last-child{background:#fccb19;}
+.share_bg .share_btn img{width:2.1rem; height:2.1rem; margin-right:1rem;}
+.share_bg .savelink{position:absolute;left:22%;top:40%; width:18rem;height:7rem;background: rgba(0, 0, 0, 0.65);border-radius: 1rem;
+color:#fff;font-size:1.8rem;line-height: 7rem;animation: fadeto 3.5s;}
+
+@keyframes enter {
+    10%{transform: translateY(-50rem);opacity: 0.3}
+    25%{transform: translateY(-0rem);opacity: 0.55}
+    40%{transform: translateY(-10rem);opacity: 0.6}
+    60%{transform: translateY(-0rem);opacity: 0.65}
+    70%{transform: translateY(-3rem);opacity: 0.7}
+    80%{transform: translateY(-0rem);opacity: 0.75}
+    90%{transform: translateY(-1rem);opacity: 0.8}
+    100%{transform: translateY(-0rem);opacity: 1}
+}
+
+/*修改默认弹框样式*/
+.active .modal-backdrop-bg {opacity: 0.5;}
+.modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+}
+/*分享弹窗*/
+#share.modal{width:74%;height:20.5rem;top:14rem;left:12.7%;border-radius: 1.5rem;min-height:20.5rem;}
+.share{text-align: center}
+.share h2{font-size:2rem;color:#808080;padding-top:1.6rem;}
+.share ul{margin-left:1.5%;margin-top:2.4rem;height:10.3rem;}
+.share li{width:18.8%;float:left;margin:0 3%}
+.share li p{font-size:1rem;color:#606060;padding-top:1.3rem;}
+.share .bottom{height:4.3rem;background:#19adb9; }
+.share .bottom span{text-align: center;line-height:4.3rem;color:#fff;font-size:1.7rem;}
+/*我的成绩弹窗*/
+#past.modal{width:74%;height:18.5rem;top:14rem;left:12.7%;border-radius: 1.5rem;min-height:18.5rem;}
+.alertpast{text-align: center;}
+.alertpast .alerttext{padding:4.8rem 0;}
+.alertpast .alerttext p{font-size:1.4rem;color:#606060;line-height:1.5}
+.alertpast .bottom{height:4rem;background:#2ac598;text-align: center }
+.alertpast .bottom span{line-height:4rem;color:#fff;font-size:1.8rem;}
+/*设置退出弹窗*/
+#exit.modal{width:74%;height:15rem;top:14rem;left:12.7%;border-radius: 1.5rem;min-height:15rem;}
+.alertexit{text-align: center;}
+.alertexit .exittext{padding:4.8rem 0;border-bottom: 1px solid #959595}
+.alertexit .exittext p{font-size:1.7rem;color:#303030;}
+.alertexit .bottom{height:4rem;text-align: center;}
+.alertexit .bottom span{line-height:4rem;color:#303030;font-size:1.7rem;padding:0 3rem;}
+.alertexit .bottom i{color:#989898;font-size:1.6rem;}
+/*四星弹窗*/
+#fourstar.modal{width:74%;height:17rem;top:14rem;left:12.7%;border-radius: 1.5rem;min-height:17rem;}
+.fourstar{text-align: center;}
+.fourstar .starimg{padding:4rem 0 1rem 0;}
+.fourstar .starimg img{width:4.7rem;height:4.4rem;display:inline-block;margin-right: 0.3rem;}
+.fourstar .startext{font-size:1.6rem;color:#bfbfbf;margin-bottom:2rem;height:2rem;}
+.fourstar .bottom{height:4rem;background:#19adb9;text-align: center }
+.fourstar .bottom span{line-height:4rem;color:#fff;font-size:1.8rem;}
+/*拍照弹窗*/
+#cameraphoto.modal{width:74%;height:15rem;top:14rem;left:12.7%;border-radius: 0.8rem;min-height:15rem;}
+.cameraphoto .modifyicon p{font-size:1.7rem;margin:1.7rem 3.2rem 2.4rem;color:#3d3d3d}
+.cameraphoto .bottom img{width:2.9rem;height:2.5rem;margin-right: 1.3rem;}
+.cameraphoto .bottom p{margin:0 0 2.3rem 3rem;font-size:1.6rem;line-height: 2.5rem;}

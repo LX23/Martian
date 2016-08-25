@@ -1,0 +1,15 @@
+<ion-view hide-nav-bar="true">
+	<ion-content>
+		<!--内容部分-->
+        <div class="lx_pic1 ion-item" ng-repeat="product in products" ui-sref="tabs.community.goTopDdt">
+            <img ng-src="{{product.img}}">
+            <div class="lx_model"></div>
+            <div class="lx_ideas">
+                <h4>{{product.title}}</h4>
+                <h5>{{product.content}}</h5>
+            </div>
+        </div>
+        <!--上拉刷新-->
+        <ion-infinite-scroll on-infinite="infinite()" immediate-check="false"></ion-infinite-scroll>
+	</ion-content>
+</ion-view>

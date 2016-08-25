@@ -1,0 +1,28 @@
+<ion-view hide-nav-bar="true" style="background: rgba(29,33,36,0.9)" >
+        <div class="banner">
+            <div class="logo">
+                <img src="images/login/images/login_03.png">
+            </div>
+        </div>
+        <form id="loginbox" novalidate name="mylogin">
+            <div class="contentbox">
+                <span style="top:1%;"><img src="images/login/images/icon_07.png"></span>
+                <input type="text" placeholder="用户名" class="text" name="username" required>
+            </div>
+            <div class="contentbox">
+                <span style="top:33%;"><img src="images/login/images/icon_10.png"></span>
+                <input type="text" placeholder="密码"  class="text" name="password" required>
+            </div>
+            <button class="loginbtn" ng-disabled="mylogin.$invalid" ng-click="login()" >登录</button>
+            <p ui-sref="tabs.forgetpassword">忘记密码</p>
+        </form>
+</ion-view>
+
+
+
+
+
+
+
+
+

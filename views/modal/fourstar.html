@@ -1,0 +1,11 @@
+<ion-modal-view id="fourstar">
+    <ion-content>
+        <div class="fourstar" >
+            <div class="starimg" >
+                <a ng-repeat="star in stars"><img ng-click="clickstar(star)" ng-src="{{star.starsrc}}"></a>
+            </div>
+            <div class="startext">{{text}}</div>
+            <div class="bottom"><span ng-click="closeModal()">确定</span></div>
+        </div>
+    </ion-content>
+</ion-modal-view>

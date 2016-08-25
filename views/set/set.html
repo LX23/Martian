@@ -1,0 +1,30 @@
+
+<ion-view title="设置" hide-tabs="true">
+    <ion-content class="stable-bg has-header">
+    	<ul class="list set-list">
+    		<li class="item">
+    			<h2 >头像</h2>
+    			<div class="header-portrait" ng-controller="photoCtrl"><img ng-click="openModal()" src="images/set/header_portrait.png" /></div>
+    		</li>
+    		<li class="item borderT" ui-sref="tabs.password">
+    			<h2>修改密码</h2>
+    		</li>
+    		<li class="item item-toggle" >
+    			<h2>消息通知</h2>
+    			<label class="toggle">
+			        <input type="checkbox">
+			        <div class="track">
+			        	<div class="handle"></div>
+			        </div>
+     			</label>
+    		</li>
+    		<li class="item borderB" ng-controller="exitCtrl">
+    			<h2 ng-click="openModal()">退出当前账号</h2>
+    		</li>
+    		<li class="item">
+    			<h2>升级</h2>
+    			<span>v.1.0</span>
+    		</li>
+    	</ul>
+    </ion-content>
+</ion-view>

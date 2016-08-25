@@ -1,0 +1,11 @@
+<ion-tabs class="tabs-icon-top" ng-class="{'tabs-item-hide': $root.hideTabs}">
+    <ion-tab title="首页" icon-on="home_on" icon-off="home_outline" ui-sref="tabs.home">
+        <ion-nav-view name="tabs-home"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="助手" icon-on="assistant_on" icon-off="assistant_outline" ui-sref="tabs.assistant">
+        <ion-nav-view name="tabs-assistant"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="社区" icon-on="community_on" icon-off="community_outline" ui-sref="tabs.community.goTop">
+        <ion-nav-view name="tabs-community"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

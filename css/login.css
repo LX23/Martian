@@ -1,0 +1,70 @@
+.banner {
+    width: 100%;
+    height: 6rem;
+    padding-left: 40%;
+    padding-top: 10rem;
+}
+
+.banner .logo {
+    height: 7rem;
+    width: 7.5rem;
+}
+
+#loginbox {
+    position: absolute;
+    top: 25rem;
+    width: 100%;
+}
+
+#loginbox .contentbox {
+    border: none;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+#loginbox .contentbox span{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    left: 2rem;
+    margin-right: 3rem;
+    z-index:10;
+
+}
+#loginbox .contentbox .text {
+    border-bottom: 1px solid #ccc;
+    width: 76%;
+    position: relative;
+    left:6rem;
+    background: transparent;
+    padding-left: 1rem;
+}
+
+#loginbox .loginbtn {
+    width: 87%;
+    border-radius: 30px;
+    border: 2px solid #24a4af;
+    color: #fff;
+    position: relative;
+    left: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 5rem;
+    height: 5rem;
+    background: transparent;
+}
+#loginbox input{color:#ccc}
+#loginbox p{
+    margin-left: 42%;
+    padding-top: 1rem;
+}
+
+.head{height: 2rem;background:#24a4af; }
+
+.loginprompt{background: rgba(75, 78, 76, 0.43);width:12rem;height:3.5rem;color:#fff;text-align: center;
+    position: absolute;top:120%;left:35%;line-height:3.5rem;border-radius: 2rem;animation:fadeto 4s }
+
+.forgetpwd{text-align: center;padding-top:2rem;}
+
+

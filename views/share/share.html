@@ -1,0 +1,16 @@
+<ion-view hide-nav-bar="true" hide-tabs="true" id="sharepic">
+	<ion-content>
+		<div class="share_bg">
+			<div class="share_name">
+				<h2>李雷</h2>
+				<p>在移动平台图标设计科中</p>
+				<h6>击败了　　　　　　<span>95%</span>的同学</h6>
+			</div>
+			<div class="share_btn">
+				<button ng-click="openModal()"><img src="images/set/share_btn01.png" />分享</button>
+				<button ng-click="getlinkfn()"><img src="images/set/share_btn02.png">保存</button>
+			</div>
+			<div class="savelink" ng-if="getlink" >已获取链接</div>
+		</div>
+    </ion-content>
+</ion-view>

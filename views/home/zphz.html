@@ -1,0 +1,26 @@
+<ion-view title="" style="color:#fff" hide-tabs="true">
+    <ion-nav-buttons side="right">
+        <div class="thumup">
+            <img src="images/zphz/share_icon.png" ng-click="openModal()">
+            <img src="images/zphz/zan_outline.png" ng-click="hide()" ng-show="isShow">
+            <img src="images/zphz/zan.png" ng-show="!isShow">
+        </div>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <div class="title">
+            <p class="fl">京剧故事主题图标</p>
+            <div class="icons fr">
+                <div  class="eye fl"><img src="images/zphz/browse.png"><span style="color: #8f8f8f">75</span></div>
+                <div  class="thum fr"><img src="images/zphz/zan_gray.png"><span style="top:-1.5rem;z-index: 10;color: #8f8f8f" >{{count}}</span></div>
+            </div>
+        </div>
+        <div class="item item-avatar" id="owner">
+            <img src="images/zphz/myicon.png">
+            <p>李雷 1512期UI视觉设计师2班</p>
+        </div>
+        <div class="listmore">
+            <img src="images/zphz/1457602722479478.jpg">
+        </div>
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view hide-nav-bar="true" style="z-index: 9999" >
+	
+	<ion-tabs ng-class="{'tabs-item-hide': $root.hideTabs}" class="tabs-top tabs-striped tit_list" >
+		<ion-tab title="CGTop" ui-sref="tabs.community.goTop">
+			<ion-nav-view name="tabs-goTop"></ion-nav-view>
+		</ion-tab>
+		<ion-tab title="活动通知" ui-sref="tabs.community.activity">
+			<ion-nav-view name="tabs-activity"></ion-nav-view>
+		</ion-tab>
+		<ion-tab title="校园通知" ui-sref="tabs.community.college">	
+			<ion-nav-view name="tabs-college"></ion-nav-view>
+		</ion-tab>
+		<ion-tab title="邮件" ui-sref="tabs.community.mail">	
+			<ion-nav-view name="tabs-mail"></ion-nav-view>
+		</ion-tab>
+	</ion-tabs>
+	
+</ion-view>

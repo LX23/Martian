@@ -1,0 +1,37 @@
+<ion-view hide-tabs="true" hide-nav-bar="true">
+	<ion-content>
+		<!--自定义头部-->
+            <div ui-sref="tabs.community.goTop" class="mytitle" style="text-align: left;padding-left:1.5rem;font-size:2.2rem;line-height:4.15rem;">
+                <i class="icon ion-ios-arrow-back" style="font-size:3rem;line-height:5.5rem;"></i>
+                CGTop
+            </div>
+        <!--内容部分-->
+        <div class="videos">
+            <video src="images/community/00.mp4"></video>
+            <div class="_box_" ng-click="play()"></div>
+            <div class="_btn_">
+                <div class="play" ng-click="traffic()"><img src="images/community/play.png"></div>
+                <div class="stop" ng-click="traffic()"><img src="images/community/stop.png"></div>
+            </div>
+        </div>
+        <div class="lx_content">
+            <h3><a>创意在哪里？</a></h3>
+            <p>关注创意领域的实践和动态。在这里，您既可体验鲜活而精彩的创意案例，聆听专家对创意难点问题的解答，又可掌握实用工具，并紧扣前沿，与广大经理人和精英切磋创意之道。</p>
+        </div>
+        <div class="lx_model1"></div>
+        <div class="cpm">
+            <div class="cpm_top"><p>是否使用流量播放视频</p></div>
+            <div class="cpm_bot button-bar">
+                <button class="button" type="button" ng-click="quxiao()">取消</button>
+                <div class="xian"></div>
+                <button class="button" type="button" ng-click="bofang()">确定</button>
+            </div>
+        </div>
+
+
+        <div class="NoServices" ng-click="reload1()">
+            <div class="flush"><img src="images/community/NoService.png"></div>
+            <p class="op">网络错误或没有连接，点击重新加载</p>
+        </div>
+	</ion-content>
+</ion-view>

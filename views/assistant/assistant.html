@@ -1,0 +1,36 @@
+<ion-view title="火星助手" style="color:#fff" id="evaluate">
+    <ion-nav-buttons side="left">
+        <a class="back"><img src="images/back.png">火星助手</a>
+    </ion-nav-buttons>
+    <ion-content>
+        <form class="inputcont" novalidate name="myform">
+            <textarea ng-model="obj.action" required></textarea>
+            <button ng-class="helpbtnclass()" ng-click="help()" ng-disabled="myform.$invalid">快来帮帮我</button>
+        </form>
+        <div class="list processed" ng-if="process.length" >
+            <div class="item row title" style="color:#000">
+                <div class="col col-33 pd">提交时间</div>
+                <div class="col col-33 pd">处理状态</div>
+                <div class="col col-33 pd">评价状态</div>
+            </div>
+            <div class="item row title" style="color:#000" ng-repeat="item in process">
+                <div class="col col-33 pd nowtime">
+                    <p>{{item.nowDate|date:"HH:mm"}}</p>
+                    <p>{{item.nowDate|date:"yyyy/MM/dd"}}</p>
+                </div>
+                <div class="col col-33 pd">{{item.state}}</div>
+                <div class="col col-33 pd">
+                    <!--<input type="button" ng-click="openModal($index)" value="评价" ng-disabled="item.evaluate">-->
+                    <button class="evaluatebtn" ng-click="openModal($index)" ng-if="!item.evaluate">评价</button>
+                    <span ng-if="item.evaluate">已评价</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="processnull" style="color:#000" ng-if="!process.length">
+            <p>还没有向火星发出任何求助信号哦~</p>
+        </div>
+
+    </ion-content>
+    <div class="promptbox" ng-if="promptbox">提交成功，请等待处理</div>
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view hide-tabs="true" hide-nav-bar="true" style="background: #f7f7f7;">
+    <div class="backtologin">
+        <i class="icon icon-left ion-ios-arrow-back backtologin-icon fl"></i><h4 ui-sref="login">登录</h4>
+    </div>
+    <div class="list" id="resets">
+
+        <form name="registerForm" novalidate>
+            <div class="item item-input resetscontent">
+                <input type="text" placeholder="用户名" name="user" ng-model="user" required>
+            </div>
+            <div class="item item-input resetscontent">
+                <input type="text" placeholder="密码" name="pwd" ng-model="pwd"  required>
+            </div>
+        </form>
+    </div>
+
+    <button id="submit" class="submit button button-clear" type="submit" ng-disabled="registerForm.$invalid" ui-sref="tabs.home">登录</button>
+    <div class="forgetpwd" >
+        <p ui-sref="tabs.forgetpassword">忘记密码?</p>
+    </div>
+</ion-view>

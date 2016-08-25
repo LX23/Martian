@@ -1,0 +1,79 @@
+<ion-view hide-nav-bar="true" view-title="作品盒子" ng-controller="pastCtrl">
+    <ion-content class="bgcolor">
+       <div class="top">
+           <div class="state  fl">
+               <div class="dp fl" ui-sref="tabs.set"><img src="images/home/dp.png"></div>
+               <div class="info fl">
+                   <h3>李雷<span>总排名：11</span></h3>
+                   <p ui-sref="tabs.result">平均成绩：A-</p>
+                   <p ui-sref="tabs.result">职业素质：95</p>
+               </div>
+           </div>
+           <div class="past fr"><img src="images/home/past.png"></div>
+       </div>
+
+        <div class="slideshow">
+            <ion-slide-box  auto-play="true" does-continue="true" >
+                <ion-slide><a ><img src="images/home/tabs_boat1.png" ng-click="goacitve()"></a></ion-slide>
+                <ion-slide><a ><img src="images/home/tabs_boat1.png"></a></ion-slide>
+                <ion-slide><a ><img src="images/home/tabs_boat1.png"></a></ion-slide>
+            </ion-slide-box>
+        </div>
+
+        <div class="workbox">
+            <div class="title">
+                <div class="fl">
+                    <i class="mywork"></i>
+                    <span>我的作品</span>
+                </div>
+                <div class="fr">
+                    <a ui-sref="tabs.workbox">开启</a>
+                </div>
+            </div>
+            <ul class="clearfix">
+               <li>
+                   <a ui-sref="tabs.zphz">
+                   <img src="images/home/work_1.png">
+                   <p class="name point14">冯v</p>
+                   <p class="class point13">1512期UI视觉设计师班1班</p>
+                   </a>
+               </li>
+                <li>
+                    <a ui-sref="tabs.zphz">
+                    <img src="images/home/work_2.png">
+                    <p class="name point14">黄玉婷</p>
+                    <p class="class point13">1512期UI视觉设计师班1班</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="workbox">
+            <div class="title">
+                <div class="fl">
+                    <i class="star5"></i>
+                    <span>五星作品</span>
+                </div>
+                <div class="fr">
+                    <a ui-sref="tabs.workbox">开启</a>
+                </div>
+            </div>
+            <ul class="clearfix">
+                <li>
+                    <img src="images/home/work_1.png">
+                    <p class="name point14">冯v</p>
+                    <p class="class point13">1512期UI视觉设计师班1班</p>
+                </li>
+                <li>
+                    <img src="images/home/work_2.png">
+                    <p class="name point14">黄玉婷</p>
+                    <p class="class point13">1512期UI视觉设计师班1班</p>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </ion-content>
+</ion-view>
