@@ -70,7 +70,8 @@ myapp.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider) {
     $stateProvider.state("tabs.result",{
         url:"/result",
         views:{"tabs-home":{
-            templateUrl:"views/result/result.html"
+            templateUrl:"views/result/result.html",
+            controller:"resultCtrl"
         }}
     });
     //职素分(杰)
